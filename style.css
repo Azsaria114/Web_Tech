@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(241, 195, 195);
+    
+}
+  p {
+    color: rgb(118, 12, 12);
+    font-family: 'Georgia', Times New Roman, Times, serif;
+  }
+  img {
+    float: right;
+    width: 100%;
+  height:auto;
+  }
+
+ 
