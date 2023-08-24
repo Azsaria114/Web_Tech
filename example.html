@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #90afb1;
+    
+  }
+  .image-container {
+    text-align: center;
+  }
+
+  .rotated-image {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .rotated-image:hover {
+    transform: rotate(45deg);
+  }
+
+  .element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transform: translate(50px, 0) rotate(30deg) scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .element:hover {
+    transform: translate(50px, 0) rotate(150deg) scale(1.5);
+  }
+</style>
+<title>CSS Transformations Example</title>
+</head>
+<body>
+  <div class="image-container"></div>
+  <img class="rotated-image" src="nin2.jpg" alt="Rotated Image">
+
+  <img src="ninja.jpg "  usemap="#Ninja" alt="bike"  />
+    <map name=Ninja>
+        <area shape="circle" coords="388,203,260" alt="tyre" href="https://www.autox.com/new-bikes/kawasaki/ninja-400/" target="_blank"/>
+    </map>
+</body>
+</html>
