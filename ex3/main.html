@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frameset Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Set your desired background color */
+        }
+
+        /* Apply dark sunshine color to all frames' backgrounds */
+        #header, #footer, #left, #right {
+            background-color:#471313; /* Dark Sunshine Color for backgrounds */
+            color:#471313; /* Set the text color */
+            text-align: center;
+            padding: 10px;
+        }
+       
+        /* Add CSS animations to the frames if desired */
+        #left {
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        #right {
+            animation: fadeInRight 1s ease-in-out;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<frameset rows="15%,75%,10%">
+    <frame name="header" id="header" src="head.html" scrolling="no" noresize>
+    <frameset cols="15%,85%">
+        <frame name="left" id="left" src="left.html" scrolling="auto">
+        <frame name="right" id="right" src="right.html" scrolling="auto">
+    </frameset>
+    <frame name="footer" id="footer" src="footer.html" scrolling="no" noresize>
+</frameset>
+<noframes>
+    <body>
+        Your browser does not support frames.
+    </body>
+</noframes>
+</html>
