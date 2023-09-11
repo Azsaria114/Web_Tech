@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="gmail.css" />
+    <title>Gmail</title>
+    <style>
+      .error-message {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img">
+        <img src="google.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h4>Sign in</h4>
+        <p>To continue to Gmail</p>
+      </div>
+      <div class="inp">
+        <input type="email" id="emailInput" placeholder="Email or phone" />
+        <p class="error-message" id="errorMessage"></p>
+      </div>
+      <div class="forget">
+        <h5><a href="#">Forgot email?</a></h5>
+        <p>Not your computer? Use Guest mode to sign in privately.</p>
+        <h4><a href="#">Learn more</a></h4>
+        <div class="account">
+          <a href="#">Create account</a>
+          <button class="btn btn-info" onclick="validateEmail()">Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="slt">
+        <select>
+          <option>English(United States)</option>
+          <option>Africans</option>
+          <option>Ascension Island</option>
+          <option>Barbados</option>
+          <option>Belgium</option>
+          <option>Bermuda</option>
+          <option>Canada</option>
+          <option>Central African Republic</option>
+          <option>Congo </option>
+          <option>Denmark</option>
+          <option>Dominica</option>
+          <option>Switzerland</option>
+          
+  
+        </select>
+        <div class="con">
+          <a href="#">Help</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function validateEmail() {
+        var emailInput = document.getElementById("emailInput");
+        var errorMessage = document.getElementById("errorMessage");
+
+        
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        if (!emailPattern.test(emailInput.value)) {
+          errorMessage.textContent = "Invalid email address. Please enter a valid email.";
+        } else {
+          errorMessage.textContent = ""; 
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -3,31 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <!--INTERNAL CSS
-    -->
-    
-  
- 
-      h1   {color: rgb(230, 212, 94);
-      }
-      p    {color: red;}
- 
-    
-      </style>
-      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pg.css">
+    <style>
+        div.a{
+  width: 400px;
+  height: 100px;
+  background-color: azure;
+  transition-property: width, height;
+  transition-duration: 2s;
+}
+div.a:hover {
+  width: 300px;
+  height: 300px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2cda8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .a {
+            width: 200px;
+            height: 200px;
+            background-color: #fffcfe;
+            transform: rotate(5deg) scale(1.1);
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info {
+            width: 400px;
+            background-color: azure;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+        }
+        .info p {
+            color: dimgrey;
+            font-family: 'Impact', Haettenschweiler, Arial Narrow Bold, sans-serif;
+            margin: 0;
+        }
+        .container .square {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        .container .square:hover {
+            background-color: #e74c3c;
+            transform: scale(1.2) rotate(15deg);
+        }
+    </style>
+    <title>BMW R18 Classic</title>
 </head>
 <body>
-      
-  
-    <h1 style="color:rgb(14, 14, 106);">"Engines of Elegance: Your Passage to Our Motorcycle Showcase"</h1>
-
-      <p style="color:rgb(164, 67, 67);">"Welcome to our captivating world of motorbike collections, where history, design, and the thrill of the ride converge. Experience the symphony of engines and artistry, as each bike shares a tale of adventure and innovation. Join us in celebrating the evolution of speed and style through the ages."</p>
-
-    <img src="rider1.jpg" usemap="#bike" alt="bike"  />
-    <map name=rider>
-        <area shape="circle" coords="600,200,260" alt="tyre" href="https://robbreport.com/motors/motorcycles/lists/greatest-motorcycles-last-century-2940928/1955-moto-guzzi-v8/" target="_blank"/>
-    </map>
+    <div class="container">
+        <h2>BMW R18 Classic</h2>
+        <div class="a">
+            <img src="bmw.jpg" alt="bike">
+        </div>
+        <div class="info">
+            <p>The BMW R18 Classic is famous for its blend of classic cruiser design with modern technology, powered by a large boxer engine. It's known for its vintage appearance, comfortable touring features, and the ability to be customized. This motorcycle combines nostalgia with modern performance.</p>
+        </div>
+        
+        <div class="square has-transition">
+            <span><img src="nin.jpg" alt="Hover Image" class="hover-image">
+            </div>
+        </span>
+        </div>
+        <div>
+            <input type="checkbox" id="has-transition" checked>
+            <label for="has-transition">transform enabled?</label>
+        </div>
+        
+    </div>
+    
 </body>
 </html>

@@ -5,29 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIKE-COLLECTIONS</title>
     <style>
-         h1   {color: rgb(87, 8, 101);
+        h1 {
+            color: rgb(87, 8, 101);
             text-align: center;
-      }
-     
-img {   
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
+        }
+        img {
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #404a08;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2c3406;
+            transform: scale(1.05);
+        }
     </style>
-    <link rel="stylesheet" href="style.css" >
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 >"Engines of Elegance: Your Passage to Our Motorcycle Showcase"</h1>
+    <h1>"Engines of Elegance: Your Passage to Our Motorcycle Showcase"</h1>
 
-    <p style="color:rgb(116, 9, 9); font-size: 25px;" >
-       <br></br> "Welcome to our captivating world of motorbike collections, where history, design, and the thrill of the ride converge.<br> Experience the symphony of engines and artistry, as each bike shares a tale of adventure and innovation. "
+    <p style="color:rgb(116, 9, 9); font-size: 25px;">
+        <br>
+        "Welcome to our captivating world of motorbike collections, where history, design, and the thrill of the ride converge.<br> Experience the symphony of engines and artistry, as each bike shares a tale of adventure and innovation."
     </p>
-    <img src="vin.jpg"  usemap="#Ninja" alt="bike"  />
-    <map name=Ninja>
+    <img src="vin.jpg" usemap="#Ninja" alt="bike"/>
+    <map name="Ninja">
         <area shape="circle" coords="388,203,260" alt="tyre" href="https://robbreport.com/motors/motorcycles/lists/greatest-motorcycles-last-century-2940928/1955-moto-guzzi-v8/" target="_blank"/>
     </map>
+    <p style="font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;">
+        <h2 style="font-family: 'Georgia', Times New Roman, Times, serif;">Timeless Beauty</h2>
+        Prepare to be mesmerized by the sheer beauty of these vintage gems.<br> Every curve, every detail, and every line on these motorbikes is a work of art. <br>The exquisite designs evoke a sense of nostalgia, reminding us of a time when riding was not just a mode of transport, but a way of life.
+    </p>
+    <img src="pg3.jpg" sizes=""/>
+
+    <a href="C:\Users\susia\OneDrive\Documents\GitHub\Web_tech\Web_Tech\exam.html" class="button" target="_blank">Wanna know about me</a>
+
+    <!-- ... (your existing code) ... -->
+
+    <div class="content">
+        <h2>Join Our Antique Bike Community</h2>
+        <form id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // Validate email format using a simple regular expression
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById("error-message").textContent = "Invalid email format";
+                return;
+            }
+
+            // Validate password length (you can add more complex validation)
+            if (password.length < 6) {
+                document.getElementById("error-message").textContent = "Password must be at least 6 characters long";
+                return;
+            }
+
+            // If validation passes, clear error message and perform further actions (e.g., submission)
+            document.getElementById("error-message").textContent = "";
+
+            // Add your code here for further processing, e.g., submitting the data
+        });
+    </script>
+
+    <!-- ... (rest of your code) ... -->
 </body>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BIKE-COLLECTIONS</title>
+    <style>
+        /* Your existing styles */
+        /* ... */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-container label, .login-container input, .login-container textarea, .login-container select {
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container textarea {
+            resize: vertical;
+        }
+
+        .login-container select {
+            width: 100%;
+        }
+
+        .login-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="content">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="bike-era">Favorite Bike Era:</label>
+                <input type="text" id="bike-era" name="bike-era" required><br><br>
+
+                <label for="fav-brand">Favorite Bike Brand:</label>
+                <input type="text" id="fav-brand" name="fav-brand" required><br><br>
+
+                <label for="memorable-riding">Memorable Riding Experience:</label>
+                <textarea id="memorable-riding" name="memorable-riding" required></textarea><br><br>
+
+                <label for="enthusiasm">Antique Bike Enthusiasm:</label>
+                <select id="enthusiasm" name="enthusiasm" required>
+                    <option value="">Select Enthusiasm</option>
+                    <option value="casual">Casual Rider</option>
+                    <option value="enthusiast">Enthusiast</option>
+                    <option value="collector">Collector</option>
+                </select><br><br>
+
+                <label for="dream-bike">Dream Vintage Bike:</label>
+                <input type="text" id="dream-bike" name="dream-bike" required><br><br>
+
+                <label for="bike-preference">Modern or Antique Bikes:</label>
+                <select id="bike-preference" name="bike-preference" required>
+                    <option value="">Select Preference</option>
+                    <option value="modern">Modern Bikes</option>
+                    <option value="antique">Antique Bikes</option>
+                </select><br><br>
+
+                <button type="submit" class="button">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById("fullname").value;
+            const nickname = document.getElementById("nickname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const bikeEra = document.getElementById("bike-era").value;
+            const favBrand = document.getElementById("fav-brand").value;
+            const memorableRiding = document.getElementById("memorable-riding").value;
+            const enthusiasm = document.getElementById("enthusiasm").value;
+            const dreamBike = document.getElementById("dream-bike").value;
+            const bikePreference = document.getElementById("bike-preference").value;
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Invalid email format");
+                return;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return;
+            }
+
+            if (enthusiasm === "") {
+                alert("Please select your antique bike enthusiasm level");
+                return;
+            }
+
+            if (dreamBike.trim() === "") {
+                alert("Please enter your dream vintage bike");
+                return;
+            }
+
+            if (bikePreference === "") {
+                alert("Please select your preference for modern or antique bikes");
+                return;
+            }
+
+            // If validation passes, proceed with further actions (e.g., submission)
+            // Add your code here for further processing, e.g., checking credentials and logging in
+            // Redirect to your web page
+            window.location.href = "file:///C:/Users/susia/OneDrive/Documents/GitHub/Web_tech/Web_Tech/pg1.html";
+        });
+    </script>
+</body>
+</html>

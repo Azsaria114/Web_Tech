@@ -1,0 +1,47 @@
+<style>
+    body {
+        font-family: 'Times New Roman', serif;
+        background-color: #f0f0f0; /* Light background color */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header Styles */
+    frame[name="header"] {
+        background-color: #1d3e38; /* Dark header background */
+        color: #fff; /* White text */
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Left Frame Styles */
+    frame[name="left"] {
+        background-image: url('leftbg.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* Right Frame Styles */
+    frame[name="right"] {
+        background-color: #fff; /* White background for content */
+        padding: 20px;
+    }
+
+    /* Footer Styles */
+    frame[name="footer"] {
+        background-color: #333; /* Dark footer background */
+        color: #fff; /* White text */
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Adjust content styles in the right frame as needed */
+    /* For antique bike-themed styles, you can use vintage fonts and colors */
+
+    /* Example text style for vintage feel */
+    .vintage-text {
+        font-family: 'Old Standard TT', serif;
+        font-size: 18px;
+        color: #7a7a7a; /* Vintage gray text color */
+    }
+</style>

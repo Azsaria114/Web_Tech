@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100%;
+            margin: 0;
+        }
+
+        .mobile {
+            width: 100%;
+            display: flex;
+            background: #471313;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        p {
+            color: #5a667a;
+        }
+
+        i {
+            color: #5a667a;
+            font-size: 1.5em;
+        }
+
+        .icon-container:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-container:hover .first {
+            color: #f7b944;
+        }
+
+        .icon-container:hover .second {
+            color: #71f7d3;
+        }
+
+        .icon-container:hover .third {
+            color: #e0b8d7;
+        }
+
+        .icon-container:hover .fourth {
+            color: #c0e8d3;
+        }
+
+        .icon-container:hover .fifth {
+            color: #e8a388;
+        }
+
+        .icon-container:hover i {
+            transform: scale(1.4);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mobile">
+            <span class="icon-container">
+                <a href="login.html" target="right">
+                    <i class="first fas fa-book-open" size="2x"></i>
+                    <p class="first">Login</p>
+                </a>
+            </span>
+            <!-- Add more links as needed -->
+            <span class="icon-container">
+                <a href="clikie.html" target="right">
+                    <i class="second fas fa-edit"></i>
+                    <p class="second">Clickie</p>
+                </a>
+            </span>
+            <span class="icon-container">
+                <a href="pg2.html" target="right">
+                    <i class="third fas fa-music"></i>
+                    <p class="third">about us</p>
+                </a>
+            </span>
+            <span class="icon-container">
+                <a href="bikes.html" target="right">
+                    <i class="fourth fas fa-heartbeat"></i>
+                    <p class="fourth">Bikes</p>
+                </a>
+            </span>
+            <span class="icon-container">
+                <a href="acc.html" target="right">
+                    <i class="fifth far fa-address-card"></i>
+                    <p class="fifth">Accessories</p>
+                </a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

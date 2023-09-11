@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="facebook-content">
+      <img class="facebook-image" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+      <p>Facebook helps you connect and share with the people in your life</p>
+    </div>
+    
+<div class="container">
+
+ 
+  <form class="login-form" id="loginForm">
+    <label for="username">Username or Email:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <button type="submit">Login</button>
+    <div class="links">
+      <a href="#">Forgotten password?</a>
+      <br>_________________________________________________________<br>
+    </div>
+    <br>
+   
+   <button id="create-account-button">Create New Account</button>
+  </form>
+  <p><a href="#"><b>Create a Page</a> for a celebrity, brand or business.</p>
+  
+</div>
+
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get the entered username and password
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Validate email format
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(username)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Validate password criteria (example: minimum 6 characters)
+    if (password.length < 6) {
+      alert('Password must be at least 6 characters.');
+      return;
+    }
+
+    // Example: Check if the username and password match (Replace with your authentication logic)
+    if (username === 'exampleuser@example.com' && password === 'examplepassword') {
+      alert('Login successful!');
+    } else {
+      alert('Login failed. Please try again.');
+    }
+  });
+</script>
+</body>
+</html>

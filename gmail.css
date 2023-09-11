@@ -1,0 +1,169 @@
+body {
+    position: relative;
+  }
+  
+  body a {
+    text-decoration: none;
+    color: #3483ea;
+  }
+  
+  .main {
+
+    position: absolute;
+    margin-left: -210px;
+    left: 50%;
+    top: 150%;
+    margin-top: 130px;
+    border: 2px solid #dadce0;
+    border-radius: 8px;
+    padding: 50px 40px;
+  }
+  
+  .main .img {
+    text-align: center;
+  }
+  
+  .main .img img {
+    height: 63px;
+    width: 90px;
+    margin-top: -6px;
+  }
+  
+  .main .content {
+    text-align: center;
+  }
+  
+  .main .content h4 {
+    font-weight: 600;
+    margin-top: -8px;
+    font-family:Georgia;
+  }
+  
+  .main .content p {
+    font-size: 17px;
+    color: #202124;
+    font-family:Georgia;
+  }
+  
+  .main .account button {
+    margin-right: auto;
+    float: right;
+    display: inline;
+  }
+  
+  .main .account a {
+    display: inline;
+  }
+  
+  .main .inp input {
+    height: 55px;
+    width: 368px;
+    border-radius: 5px;
+    border: 2px solid #dadce0;
+    padding: 0 10px;
+    
+  }
+  
+  
+  
+  
+  .main input::placeholder {
+    font-size: 18px;
+    color: #979ca0;
+    font-weight: 400;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-left: 5px;
+  }
+  
+  .main input:focus {
+    border: 2px solid #1a73e8;
+    outline: none;
+    z-index: 0;
+  }
+  
+  
+  .main input:focus::placeholder {
+    color: #1a73e8;
+    font-size: 15px;
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    -webkit-transform-origin: 93px center;
+            transform-origin: 93px center;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  .main .forget h5 {
+    font-size: 15px;
+    margin-top: 4px;
+    font-family:'Times New Roman';
+  }
+  
+  .main .forget p {
+    font-size: 16px;
+    color: #707478;
+    font-family:'Times New Roman';
+    margin-top: 56px;
+    font-weight: 500;
+  }
+  
+  .main .forget h4 {
+    font-size: 15px;
+    margin-top: -12px;
+    font-family:'Times New Roman';
+  }
+  
+  .main .account {
+    margin-top: 42px;
+  }
+  
+  .main .account a {
+    font-size: 15px;
+    font-weight: 500;
+    font-family:'Times New Roman';
+  }
+  
+  .main .account .btn {
+    background:#3483ea;
+    padding: 5px 24px;
+    font-weight: 500;
+    font-family:'Times New Roman';
+    margin-bottom: 20px;
+  }
+  
+  .main .account .btn:hover {
+    background:#3483ea;
+  }
+  
+  .footer {
+    
+    position: absolute;
+    margin-left: -215px;
+    left: 50%;
+    top: 50%;
+    margin-top: 680px;
+  }
+  
+  .footer select {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-family:'Times New Roman';
+    color:#202124;
+  }
+  
+  .footer .con {
+    display: inline-block;
+    margin-left: 120px;
+  }
+  
+  .footer .con a {
+    color:#202124;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family:'Times New Roman';
+    font-weight: 500;
+  }

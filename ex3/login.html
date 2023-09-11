@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+	<style>
+		 body {
+            background-image: url('loginbg.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			animation: zoomOutBackground 5s ease forwards;
+        }
+		@keyframes zoomOutBackground {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); /* Adjust the scale value for the desired zoom-out effect */
+    }
+}
+	</style>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-image"></div>
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="right-image"></div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

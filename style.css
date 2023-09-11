@@ -1,15 +1,99 @@
-body{
-    background-color: rgb(241, 195, 195);
-    
+body {
+  background-color: #f0f0f0; /* Light gray background for the whole body */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-  p {
-    color: rgb(118, 12, 12);
-    font-family: 'Georgia', Times New Roman, Times, serif;
-  }
-  img {
-    float: right;
-    width: 100%;
-  height:auto;
-  }
+
+.container {
+  background-color: #fff; /* White background for the login form */
+  padding: 40px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: none;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: left;
+  font-style: italic;
+}
+
+.login-form input::placeholder {
+  font-style: normal;
+}
+
+.login-form button {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  
+  
+}
+
+.login-form button:hover {
+  background-color: #0e63b6;
+}
+
+.links {
+  margin-top: 10px;
+  font-size: 12px; /* Adjust the font size for the links */
+}
+
+.links a {
+  text-decoration: none;
+  color: #1877f2;
+}
+
+#create-account-button {      
+     background-color: #4caf50;      
+     color: #fff;       
+     padding: 5px 10px;       
+     border: none;       
+     border-radius: 3px;      
+    cursor: pointer;       
+    width: auto;     
+}
+
+#create-account-button:hover {
+  background-color: #4caf50;
+}
+
+.paragraph {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Facebook image styles */
+.facebook-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Facebook content styles */
+.facebook-content {
+  text-align: left;
+}
 
  
